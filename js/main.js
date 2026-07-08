@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const body = encodeURIComponent(
         `Name: ${name}\nEmail: ${email}\nService interested in: ${service}\n\nMessage:\n${message}`
       );
-      window.location.href = `mailto:digitalark77@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:philip.webdeveloper@gmail.com?subject=${subject}&body=${body}`;
 
       status.style.color = 'var(--gold-bright)';
       status.textContent = 'Opening your email app to send this message…';
