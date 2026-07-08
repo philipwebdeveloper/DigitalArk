@@ -538,7 +538,7 @@ footer { border-top: 1px solid var(--line-soft); padding: 70px 0 34px; }
 }
 
 .founder-link {
-    color: inherit;
+    color: #0f141c;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.2s ease, transform 0.1s ease;
