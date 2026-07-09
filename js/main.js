@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
-
+  }
 chatbox.setAttribute("page_id", "680290905177760");
+}
 });
