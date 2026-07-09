@@ -568,7 +568,7 @@ footer { border-top: 1px solid var(--line-soft); padding: 70px 0 34px; }
 .ai-chat-fab {
   position: fixed;
   right: 24px;
-  bottom: 96px; /* stacked above the Messenger button at bottom:24px */
+  bottom: 20px; /* stacked above the Messenger button at bottom:24px */
   z-index: 999;
   width: 60px;
   height: 60px;
