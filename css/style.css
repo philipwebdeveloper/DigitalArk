@@ -729,7 +729,7 @@ footer { border-top: 1px solid var(--line-soft); padding: 70px 0 34px; }
 .faq-chip-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   margin-top: 4px;
 }
 .faq-chip {
