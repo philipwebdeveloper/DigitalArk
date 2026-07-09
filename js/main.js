@@ -100,3 +100,30 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const chatbox = document.getElementById("fb-customer-chat");
+
+    if (chatbox) {
+        chatbox.setAttribute("page_id", "680290905177760");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    }
+});
+
+window.fbAsyncInit = function () {
+    FB.init({
+        xfbml: true,
+        version: "v23.0"
+    });
+};
+
+(function (d, s, id) {
+    let js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, "script", "facebook-jssdk"));
