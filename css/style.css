@@ -722,7 +722,7 @@ footer { border-top: 1px solid var(--line-soft); padding: 70px 0 34px; }
 
 @media (max-width: 600px) {
   .ai-chat-fab { right: 16px; bottom: 84px; width: 54px; height: 54px; }
-  .ai-chat-window { right: 16px; bottom: 148px; width: calc(100vw - 32px); }
+  .ai-chat-window { right: 16px; bottom: 200px; width: calc(100vw - 32px); }
 }
 
 /* ---------------- Quick-reply chips (FAQ bot) ---------------- */
