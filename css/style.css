@@ -556,7 +556,7 @@ footer { border-top: 1px solid var(--line-soft); padding: 70px 0 34px; }
 }
 
 .ceo-link:hover {
-  color: #00c8ff;
+  color: #00BFFF;
   transform: scale(1.08);
   text-shadow: 0 0 15px rgba(0, 200, 255, 0.7);
 }
