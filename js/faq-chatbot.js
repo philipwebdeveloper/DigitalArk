@@ -50,7 +50,7 @@ const KNOWLEDGE_BASE = [
   }
 ];
 
-const FALLBACK_ANSWER = "I'm a simple FAQ helper, so I might not catch everything — but I can help with services, pricing, timelines, our process, or contact info. Pick a topic below, or reach the team directly at philip.webdeveloper21@gmail.com or m.me/61579037024996.";
+const FALLBACK_ANSWER = "I'm a simple FAQ helper, so I might not catch everything — but I can help with services, pricing, timelines, our process, or contact info. Pick a topic below, or reach the team directly at philip.webdeveloper21@gmail.com or 0994-926-2935";
 
 document.addEventListener('DOMContentLoaded', () => {
   const fab = document.getElementById('faq-chat-fab');
