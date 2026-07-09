@@ -22,7 +22,7 @@ const KNOWLEDGE_BASE = [
     id: 'pricing',
     label: '💰 Pricing',
     keywords: ['price', 'pricing', 'cost', 'how much', 'rate', 'package', 'budget', 'fee'],
-    answer: "Our starting packages:\n• Starter — ₱8,500 (1-page site)\n• Business — ₱18,000 (up to 5 pages, most popular)\n• Growth — ₱32,000 (up to 10 pages or online store)\n\nNeed something custom? Message us for a free quote."
+    answer: "Our starting packages:\n• Starter — ₱8,500 (1-page site)\n• Business — ₱24,990 (up to 5 pages, most popular)\n• Growth — Let's Talk (up to 10 pages or online store)\n\nNeed something custom? Message us for a free quote."
   },
   {
     id: 'timeline',
