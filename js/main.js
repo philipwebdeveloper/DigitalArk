@@ -100,12 +100,3 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
-
-document.addEventListener("DOMContentLoaded", () => {
-    const chatbox = document.getElementById("fb-customer-chat");
-
-    if (chatbox) {
-        chatbox.setAttribute("page_id", "680290905177760");
-        chatbox.setAttribute("attribution", "biz_inbox");
-    }
-});
