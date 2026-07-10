@@ -41,6 +41,8 @@ const KNOWLEDGE_BASE = [
     label: '📍 Contact & hours',
     keywords: ['contact', 'email', 'phone', 'number', 'address', 'location', 'hours', 'reach', 'call', 'message'],
     answer: "You can reach us at:\n📧 philip.webdeveloper21@gmail.com\n📞 0994 926 2935\n💬 Messenger: m.me/61579037024996\n📍 San Jose Del Monte, Bulacan, PH\n🕐 Mon–Sat, 9AM–6PM"
+    <a style="color: #ffffff; text-decoration: underline; font-weight: bold; font-size: 13px;" href="https://www.facebook.com/profile.php?id=61579037024996" target="_blank" rel="noopener noreferrer">Digital Ark
+</a>
   },
   {
     id: 'portfolio',
