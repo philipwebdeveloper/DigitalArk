@@ -763,7 +763,7 @@ chatbot-widget.css
    right, on wider screens. Stacks on mobile. */
 .hero .container {
   display: flex;
-  align-items: center;
+  align-items: right;
   gap: 60px;
 }
 .hero .hero-content {
