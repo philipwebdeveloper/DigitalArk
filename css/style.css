@@ -754,14 +754,18 @@ chatbot-widget.css
 /* Turns the hero into a two-column layout: text left, animation
    right, on wider screens. Stacks on mobile. */
 .hero-flex {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
-.hero .hero-content {
-  flex: 1 1 480px;
-  text-align: left;
-  margin: 0;
+     display: flex !important;
+     align-items: center !important;
+     gap: 60px !important;
+     flex-wrap: nowrap !important;
+   }
+   .hero-flex .hero-content {
+     flex: 1 1 480px !important;
+   }
+   .hero-flex .hero-device {
+     flex: 1 1 420px !important;
+     max-width: 460px !important;
+   }
 }
 .hero .hero-content .hero-ctas { justify-content: flex-start; }
 
