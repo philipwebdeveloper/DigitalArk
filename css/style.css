@@ -751,21 +751,25 @@ footer { border-top: 1px solid var(--line-soft); padding: 70px 0 34px; }
 }
 chatbot-widget.css
 
+/* ============================================================
+   DIGITAL ARK — Hero "site being built" animation styles
+   Add this to the END of your css/style.css file.
+   Pure CSS — no JavaScript required, nothing to load or break.
+   Uses your existing --gold / --gold-bright / --bg-card variables
+   so it automatically matches your site's blue/cyan theme.
+   ============================================================ */
+
 /* Turns the hero into a two-column layout: text left, animation
    right, on wider screens. Stacks on mobile. */
-.hero-flex {
-     display: flex !important;
-     align-items: center !important;
-     gap: 60px !important;
-     flex-wrap: nowrap !important;
-   }
-   .hero-flex .hero-content {
-     flex: 1 1 480px !important;
-   }
-   .hero-flex .hero-device {
-     flex: 1 1 420px !important;
-     max-width: 460px !important;
-   }
+.hero .container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.hero .hero-content {
+  flex: 1 1 480px;
+  text-align: left;
+  margin: 0;
 }
 .hero .hero-content .hero-ctas { justify-content: flex-start; }
 
@@ -986,5 +990,3 @@ chatbot-widget.css
 @media (max-width: 480px) {
   .floating-chip { display: none; }
 }
-
-
