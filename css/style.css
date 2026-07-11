@@ -764,7 +764,7 @@ chatbot-widget.css
 .hero .container {
   display: flex;
   align-items: right;
-  gap: 60px;
+  gap: 20px;
 }
 .hero .hero-content {
   flex: 1 1 480px;
