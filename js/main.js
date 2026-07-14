@@ -70,32 +70,60 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ---- Contact form -> mailto ---- */
+  /* ---- Contact form -> auto-sends via Web3Forms (no email app opens) ---- */
   const form = document.getElementById('contact-form');
   if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
+      const status = document.getElementById('form-status');
+      const submitBtn = form.querySelector('button[type="submit"]');
+
       const name = form.name.value.trim();
       const email = form.email.value.trim();
       const service = form.service ? form.service.value : '';
       const message = form.message.value.trim();
-      const status = document.getElementById('form-status');
 
       if (!name || !email || !message) {
-        status.textContent = 'Please fill in your name, email, and message.';
         status.style.color = '#e08a8a';
+        status.textContent = 'Please fill in your name, email, and message.';
         return;
       }
 
-      const subject = encodeURIComponent(`New project inquiry from ${name}`);
-      const body = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\nService interested in: ${service}\n\nMessage:\n${message}`
-      );
-      window.location.href = `mailto:philip.webdeveloper@gmail.com?subject=${subject}&body=${body}`;
-
+      submitBtn.disabled = true;
       status.style.color = 'var(--gold-bright)';
-      status.textContent = 'Opening your email app to send this message…';
-      form.reset();
+      status.textContent = 'Sending…';
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            access_key: 'a05b3c48-13ad-437d-84be-714f98608c3a',
+            subject: `New project inquiry from ${name} — Digital Ark website`,
+            from_name: 'Digital Ark Website',
+            name: name,
+            email: email,
+            service_interested_in: service,
+            message: message
+          })
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+          status.style.color = 'var(--gold-bright)';
+          status.textContent = "Thanks! Your message has been sent — we'll get back to you soon.";
+          form.reset();
+        } else {
+          status.style.color = '#e08a8a';
+          status.textContent = "Something went wrong sending your message. Please try again or email us directly.";
+        }
+      } catch (err) {
+        status.style.color = '#e08a8a';
+        status.textContent = "Couldn't send right now. Please check your connection or email us directly.";
+      }
+
+      submitBtn.disabled = false;
     });
   }
 
