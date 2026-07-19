@@ -966,3 +966,33 @@ footer { border-top: 1px solid var(--line-soft); padding: 70px 0 34px; }
 @media (max-width: 480px) {
   .floating-chip { display: none; }
 }
+
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s var(--ease);
+}
+.project-card:hover .project-thumb img {
+  transform: scale(1.06);
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--gold-bright);
+}
+.project-link svg {
+  width: 14px;
+  height: 14px;
+  transition: transform .3s var(--ease);
+}
+.project-card:hover .project-link svg {
+  transform: translate(2px, -2px);
+}
+
